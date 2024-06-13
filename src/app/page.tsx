@@ -27,7 +27,7 @@ export default function Home() {
         Get started
         <MoveRight className="ml-2" />
       </Button>
-      <div className="h-1/2 mt-12 flex gap-2.5 w-[90%]">
+      <div className="mt-12 flex gap-2.5 w-[90%]">
         <div className="w-1/3 flex flex-col gap-2.5 lg:w-1/5">
           <div className="h-[380px] bg-[#0054CF] w-full rounded-md"></div>
           <div className="h-[380px] bg-[#F88B0D] w-full rounded-md"></div>
@@ -51,12 +51,51 @@ export default function Home() {
           <div className="h-[380px] bg-[#592488] w-full rounded-md"></div>
         </div>
       </div>
-      <div className="my-5 h-10 w-[90%] bg-black rounded-lg flex items-center">
+      <div className="my-5 h-10 w-[90%] bg-[url(/images/white-dot-background.png)] bg-cover rounded-lg flex items-center">
         <Image
-          className="h-full w-fit p-2 mx-1"
+          className="h-full w-fit p-1.5 mx-1"
           src={logo}
           alt="snuconnect-logo"
         />
+      </div>
+      <div className="flex gap-2 w-[90%]">
+        <div className="w-1/2 flex-col  hidden lg:flex">
+          <div className="w-full h-[380px] flex flex-col">
+            <div className="h-[90%] bg-[#F88B0D]  rounded-md"></div>
+            <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
+              Take a look at our journey, from a simple idea to fruition to make
+              the lives of SNU Students a breeze. Keep track of all SNIoE Campus
+              vehicles from right here and make travelling across campus as easy
+              as tap, tap, tap!
+            </div>
+          </div>
+          <div className="w-full h-[560px] flex flex-col my-6">
+            <div className="h-[90%] bg-[#CD1739] rounded-md"></div>
+            <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
+              Take a look at our journey, from a simple idea to fruition to make
+              the lives of SNU Students a breeze. Keep track of all SNIoE Campus
+              vehicles from right here and make travelling across campus as easy
+              as tap, tap, tap!
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2 flex-col  hidden lg:flex">
+          <div className="w-full h-[560px] flex flex-col">
+            <div className="h-[90%] bg-[#0054CF]  rounded-md"></div>
+            <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
+              Take a look at our journey, from a simple idea to fruition to make
+              the lives of SNU Students a breeze. Keep track of all SNIoE Campus
+              vehicles from right here and make travelling across campus as easy
+              as tap, tap, tap!
+            </div>
+          </div>
+          <div className="w-full h-[380px] flex flex-col my-6">
+            <div className="h-[90%] bg-[#CD1739] rounded-md"></div>
+            <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
+              Wanna know more? Click here to check out our story
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
