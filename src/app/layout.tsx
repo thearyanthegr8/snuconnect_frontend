@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "@/styles/root/globals.scss";
 import { Toaster } from "react-hot-toast";
 
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
+
+const inter = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Toaster position="bottom-center" />
+      <body className={`${inter.className} bg-[#F8F9FA]`} >
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
