@@ -2,10 +2,17 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
 import logo from "../../public/images/logo-white.svg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home - SNU Connect",
+  description: "",
+};
 
 export default function Home() {
   return (
-    <div className="mt-10 min-h-screen flex flex-col items-center">
+    <div className="mt- min-h-screen flex flex-col items-center">
+      <div className="h-[20vh]"></div>
       <div className="flex flex-col items-center justify-center">
         <div className="text-5xl font-semibold text-center">
           A journey of a{" "}
@@ -19,7 +26,7 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <p className="my-8 text-center">
+      <p className="my-8 text-xl text-center">
         SNUConnect is here to make those long 8 AM walks from Mudumalai to
         D-Block easier. Keep track of all on-campus vehicles from right here!
       </p>
@@ -51,7 +58,7 @@ export default function Home() {
           <div className="h-[380px] bg-[#592488] w-full rounded-md"></div>
         </div>
       </div>
-      <div className="my-5 h-10 w-[90%] bg-[url(/images/white-dot-background.png)] bg-cover rounded-lg flex items-center">
+      <div className="my-5 h-12 w-[90%] bg-[url(/images/white-dot-background.png)] bg-cover rounded-lg flex items-center">
         <Image
           className="h-full w-fit p-1.5 mx-1"
           src={logo}
@@ -61,7 +68,7 @@ export default function Home() {
       <div className="flex gap-2 w-[90%]">
         <div className="w-1/2 flex-col  hidden lg:flex">
           <div className="w-full h-[380px] flex flex-col">
-            <div className="h-[90%] bg-[#F88B0D]  rounded-md"></div>
+            <div className="h-[90%] bg-[#F88B0D] rounded-md"></div>
             <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
               Take a look at our journey, from a simple idea to fruition to make
               the lives of SNU Students a breeze. Keep track of all SNIoE Campus
