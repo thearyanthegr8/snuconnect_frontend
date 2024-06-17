@@ -36,17 +36,17 @@ export default function Home() {
       </Button>
       <div className="mt-12 flex gap-2.5 w-[90%]">
         <div className="w-1/3 flex flex-col gap-2.5 lg:w-1/5">
-          <div className="h-[380px] bg-[#0054CF] w-full rounded-md"></div>
-          <div className="h-[380px] bg-[#F88B0D] w-full rounded-md"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#0054CF] w-full rounded-md"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#F88B0D] w-full rounded-md"></div>
         </div>
         <div className="w-1/3 flex flex-col gap-2.5 lg:w-1/5">
-          <div className="h-[180px]"></div>
-          <div className="h-[380px] bg-[#592488] w-full rounded-md"></div>
-          <div className="h-[190px] bg-[#2D8777] w-full rounded-md"></div>
+          <div className="h-[90px] sm:h-[180px]"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#592488] w-full rounded-md"></div>
+          <div className="h-[90px] sm:h-[190px] bg-[#2D8777] w-full rounded-md"></div>
         </div>
         <div className="w-1/3 flex flex-col gap-2.5 lg:w-1/5">
-          <div className="h-[380px] bg-[#CD1739] w-full rounded-md"></div>
-          <div className="h-[380px] bg-[#1B62A9] w-full rounded-md"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#CD1739] w-full rounded-md"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#1B62A9] w-full rounded-md"></div>
         </div>
         <div className="w-1/5 flex-col gap-2.5 hidden lg:flex ">
           <div className="h-[180px]"></div>
