@@ -7,7 +7,6 @@ import Footer from "@/components/footer/footer";
 
 const inter = DM_Sans({ subsets: ["latin"] });
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -15,10 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#F8F9FA]`} >
-        <Navbar/>
-        {children}
-        <Footer/>
+      <body className={`${inter.className} bg-[#F8F9FA]`}>
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );
