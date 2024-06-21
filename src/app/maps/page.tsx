@@ -1,7 +1,7 @@
 import React from "react";
-import Map from "./_map";
+import Map from "@/components/_map";
 
-function Page() {
+export default function Page() {
   return (
     <section className="w-full h-screen bg-red-100 relative">
       <div className="z-[100] absolute top-0 left-0 w-full min-h-screen h-full flex justify-center items-center bg-black/40 p-12">
@@ -13,5 +13,3 @@ function Page() {
     </section>
   );
 }
-
-export default Page;
