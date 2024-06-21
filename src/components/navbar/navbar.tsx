@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="absolute py-4 w-full flex justify-between px-12 z-[1000] bg-white shadow-md">
+    <div className="absolute py-4 w-full flex justify-between px-20 z-[1000] bg-white shadow-md">
       <Image src={logo} alt="SNU-Connect" />
-      <div className="flex font-bold justify-evenly w-1/3">
+      <div className="flex font-bold gap-16">
         <Link className="my-auto h-fit text-lg" href="/">
           Home
         </Link>

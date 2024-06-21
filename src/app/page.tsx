@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="mt- min-h-screen flex flex-col items-center">
-      <div className="h-[20vh]"></div>
-      <div className="flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center">
+      {/* <div className="h-[20vh]"></div> */}
+      <div className="flex flex-col items-center justify-center pt-20">
         <div className="text-5xl font-semibold text-center">
           A journey of a{" "}
           <span className=" bg-gradient-to-r text-transparent bg-clip-text from-[#71191B] via-[#B02608] to-[#D73033]">
