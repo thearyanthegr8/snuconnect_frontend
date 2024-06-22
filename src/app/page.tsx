@@ -20,7 +20,7 @@ export default function Home() {
             thousand miles,{" "}
           </span>
           <br />
-          begings with a{" "}
+          begins with a{" "}
           <span className=" bg-gradient-to-r text-transparent bg-clip-text from-[#0054CF] to-[#002B69] ">
             single step
           </span>
