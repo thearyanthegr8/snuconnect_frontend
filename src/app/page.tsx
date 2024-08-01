@@ -36,26 +36,96 @@ export default function Home() {
       </Button>
       <div className="mt-12 flex gap-2.5 w-[90%]">
         <div className="w-1/3 flex flex-col gap-2.5 lg:w-1/5">
-          <div className="h-[190px] sm:h-[380px] bg-[#0054CF] w-full rounded-md"></div>
-          <div className="h-[190px] sm:h-[380px] bg-[#F88B0D] w-full rounded-md"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#0054CF] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Academic Blocks.jpg"}
+              alt="Academic Blocks"
+              fill
+              objectFit="cover"
+            />
+          </div>
+          <div className="h-[190px] sm:h-[380px] bg-[#F88B0D] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/D Block.jpg"}
+              alt="D Block"
+              fill
+              objectFit="cover"
+            />
+          </div>
         </div>
         <div className="w-1/3 flex flex-col gap-2.5 lg:w-1/5">
           <div className="h-[90px] sm:h-[180px]"></div>
-          <div className="h-[190px] sm:h-[380px] bg-[#592488] w-full rounded-md"></div>
-          <div className="h-[90px] sm:h-[190px] bg-[#2D8777] w-full rounded-md"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#592488] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Dining Hall 2.jpg"}
+              alt="Dining Hall 2"
+              fill
+              objectFit="cover"
+            />
+          </div>
+          <div className="h-[90px] sm:h-[190px] bg-[#2D8777] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Dining Hall 3.jpg"}
+              alt="Dining Hall 3"
+              fill
+              objectFit="cover"
+            />
+          </div>
         </div>
         <div className="w-1/3 flex flex-col gap-2.5 lg:w-1/5">
-          <div className="h-[190px] sm:h-[380px] bg-[#CD1739] w-full rounded-md"></div>
-          <div className="h-[190px] sm:h-[380px] bg-[#1B62A9] w-full rounded-md"></div>
+          <div className="h-[190px] sm:h-[380px] bg-[#CD1739] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Football Feild.jpg"}
+              alt="Football Feild"
+              fill
+              objectFit="cover"
+            />
+          </div>
+          <div className="h-[190px] sm:h-[380px] bg-[#1B62A9] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Hostel cluster.jpg"}
+              alt="Hostel cluster"
+              fill
+              objectFit="cover"
+            />
+          </div>
         </div>
         <div className="w-1/5 flex-col gap-2.5 hidden lg:flex ">
           <div className="h-[180px]"></div>
-          <div className="h-[380px] bg-[#F88B0D] w-full rounded-md"></div>
-          <div className="h-[190px] bg-[#CD1739] w-full rounded-md"></div>
+          <div className="h-[380px] bg-[#F88B0D] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Hostel-2.jpg"}
+              alt="Hostel-2"
+              fill
+              objectFit="cover"
+            />
+          </div>
+          <div className="h-[190px] bg-[#CD1739] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Hostel.jpg"}
+              alt="Hostel"
+              fill
+              objectFit="cover"
+            />
+          </div>
         </div>
         <div className="w-1/5 flex-col gap-2.5 hidden lg:flex">
-          <div className="h-[380px] bg-[#2D8777] w-full rounded-md"></div>
-          <div className="h-[380px] bg-[#592488] w-full rounded-md"></div>
+          <div className="h-[380px] bg-[#2D8777] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Inside Library-2.jpg"}
+              alt="Inside Library-2"
+              fill
+              objectFit="cover"
+            />
+          </div>
+          <div className="h-[380px] bg-[#592488] w-full rounded-md relative overflow-hidden">
+            <Image
+              src={"/images/homepages/Inside Library.jpg"}
+              alt="Inside Library"
+              fill
+              objectFit="cover"
+            />
+          </div>
         </div>
       </div>
       <div className="my-5 h-12 w-[90%] bg-[url(/images/white-dot-background.png)] bg-cover rounded-lg flex items-center">
@@ -68,7 +138,14 @@ export default function Home() {
       <div className="flex gap-2 w-[90%]">
         <div className="w-1/2 flex-col  hidden lg:flex">
           <div className="w-full h-[380px] flex flex-col">
-            <div className="h-[90%] bg-[#F88B0D] rounded-md"></div>
+            <div className="h-[90%] bg-[#F88B0D] rounded-md relative overflow-hidden">
+              <Image
+                src={"/images/homepages/Library .jpg"}
+                alt="Library "
+                fill
+                objectFit="cover"
+              />
+            </div>
             <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
               Take a look at our journey, from a simple idea to fruition to make
               the lives of SNU Students a breeze. Keep track of all SNIoE Campus
@@ -77,7 +154,14 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-[560px] flex flex-col my-6">
-            <div className="h-[90%] bg-[#CD1739] rounded-md"></div>
+            <div className="h-[90%] bg-[#CD1739] rounded-md relative overflow-hidden">
+              <Image
+                src={"/images/homepages/Main Gate.jpg"}
+                alt="Main Gate"
+                fill
+                objectFit="cover"
+              />
+            </div>
             <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
               Take a look at our journey, from a simple idea to fruition to make
               the lives of SNU Students a breeze. Keep track of all SNIoE Campus
@@ -88,7 +172,14 @@ export default function Home() {
         </div>
         <div className="w-1/2 flex-col  hidden lg:flex">
           <div className="w-full h-[560px] flex flex-col">
-            <div className="h-[90%] bg-[#0054CF]  rounded-md"></div>
+            <div className="h-[90%] bg-[#0054CF]  rounded-md relative overflow-hidden">
+              <Image
+                src={"/images/homepages/Nescafe.jpg"}
+                alt="Nescafe"
+                fill
+                objectFit="cover"
+              />
+            </div>
             <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
               Take a look at our journey, from a simple idea to fruition to make
               the lives of SNU Students a breeze. Keep track of all SNIoE Campus
@@ -97,7 +188,14 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-[380px] flex flex-col my-6">
-            <div className="h-[90%] bg-[#CD1739] rounded-md"></div>
+            <div className="h-[90%] bg-[#CD1739] rounded-md relative overflow-hidden">
+              <Image
+                src={"/images/homepages/Research block.jpg"}
+                alt="Research block"
+                fill
+                objectFit="cover"
+              />
+            </div>
             <div className="bg-[#F8F9FA] w-3/4 text-center mx-auto -translate-y-1/2 p-4 rounded-lg">
               Wanna know more? Click here to check out our story
             </div>

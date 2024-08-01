@@ -24,7 +24,14 @@ export default function Page() {
             know exactly where it is!
           </span>
         </div>
-        <div className="xl:mt-10 w-full xl:w-1/3 h-[30vh] md:h-[50vh] xl:h-[70vh] bg-[#F88B0D] rounded-lg"></div>
+        <div className="xl:mt-10 w-full xl:w-1/3 h-[30vh] md:h-[50vh] xl:h-[70vh] bg-[#F88B0D] rounded-lg relative overflow-hidden">
+          <Image
+            src={"/images/homepages/SNU Layout.jpg"}
+            alt="SNU Layout"
+            fill
+            objectFit="cover"
+          />
+        </div>
       </div>
       <div className="my-5 h-12 w-[90%] bg-[url(/images/white-dot-background.png)] bg-cover rounded-lg flex items-center">
         <Image
