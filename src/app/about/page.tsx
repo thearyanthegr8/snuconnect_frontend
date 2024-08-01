@@ -57,52 +57,115 @@ export default function Page() {
           </TabsList>
           <TabsContent value="marketing">
             <div className="w-full flex justify-evenly mt-8 flex-wrap">
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lando Norris" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lando Norris" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lando Norris" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lando Norris"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lando Norris"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lando Norris"
+              />
               <div className="block lg:hidden w-full h-0"></div>
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lando Norris" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lando Norris" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lando Norris"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lando Norris"
+              />
             </div>
           </TabsContent>
           <TabsContent value="des">
             <div className="w-full flex justify-evenly mt-8 flex-wrap">
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Charles Leclerc" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Charles Leclerc" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Charles Leclerc" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Charles Leclerc"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Charles Leclerc"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Charles Leclerc"
+              />
               <div className="block lg:hidden w-full h-0"></div>
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Charles Leclerc" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Charles Leclerc" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Charles Leclerc"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Charles Leclerc"
+              />
             </div>
           </TabsContent>
           <TabsContent value="dev">
             <div className="w-full flex justify-evenly mt-8 flex-wrap">
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Max Verstappen" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Max Verstappen" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Max Verstappen" />
-              <div className="block lg:hidden w-full h-0"></div>
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Max Verstappen" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Max Verstappen" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Aryan Tomar"
+                imageurl="Aryan Tomar - Development.jpg"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Max Verstappen"
+              />
             </div>
           </TabsContent>
           <TabsContent value="con">
             <div className="w-full flex justify-evenly mt-8 flex-wrap">
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lewis Hamilton" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lewis Hamilton" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lewis Hamilton" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lewis Hamilton"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lewis Hamilton"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lewis Hamilton"
+              />
               <div className="block lg:hidden w-full h-0"></div>
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lewis Hamilton" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Lewis Hamilton" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lewis Hamilton"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Lewis Hamilton"
+              />
             </div>
           </TabsContent>
           <TabsContent value="photo">
             <div className="w-full flex justify-evenly mt-8 flex-wrap">
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Fernando Alonso" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Fernando Alonso" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Fernando Alonso" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Fernando Alonso"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Fernando Alonso"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Fernando Alonso"
+              />
               <div className="block lg:hidden w-full h-0"></div>
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Fernando Alonso" />
-              <PersonCard className="w-[15%] my-2 min-w-[140px]" name="Fernando Alonso" />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Fernando Alonso"
+              />
+              <PersonCard
+                className="w-[15%] my-2 min-w-[140px]"
+                name="Fernando Alonso"
+              />
             </div>
           </TabsContent>
         </Tabs>

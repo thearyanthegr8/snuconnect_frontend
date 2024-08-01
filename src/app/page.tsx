@@ -156,8 +156,8 @@ export default function Home() {
           <div className="w-full h-[560px] flex flex-col my-6">
             <div className="h-[90%] bg-[#CD1739] rounded-md relative overflow-hidden">
               <Image
-                src={"/images/homepages/Main Gate.jpg"}
-                alt="Main Gate"
+                src={"/images/homepages/Main gate.jpg"}
+                alt="Main gate"
                 fill
                 objectFit="cover"
               />
