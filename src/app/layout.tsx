@@ -1,6 +1,7 @@
 import { DM_Sans } from "next/font/google";
 import "@/styles/root/globals.scss";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
@@ -15,9 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#F8F9FA]`}>
-        <Navbar />
-        <main className="min-h-screen py-16 px-10">{children}</main>
-        <Footer />
+        {/* <Navbar /> */}
+        <main className="h-screen max-h-screen overflow-hidden">
+          {children}
+        </main>
+        {/* <Footer /> */}
+        <Analytics />
       </body>
     </html>
   );
