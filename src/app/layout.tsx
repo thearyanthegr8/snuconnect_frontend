@@ -16,11 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#F8F9FA]`}>
-        {/* <Navbar /> */}
-        <main className="h-screen max-h-screen overflow-hidden">
-          {children}
-        </main>
-        {/* <Footer /> */}
+        <Navbar />
+        <main className="py-4">{children}</main>
+        <Footer />
         <Analytics />
       </body>
     </html>
