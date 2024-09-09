@@ -23,7 +23,7 @@ export default function Page() {
           D-Block easier. Keep track of all on-campus vehicles from right here!
         </div>
         <Tabs className="mt-8 w-[90%]" defaultValue="dev">
-          <TabsList className="w-full justify-evenly">
+          <TabsList className="w-full justify-evenly gap-4">
             <TabsTrigger
               className="mt-4 lg:text-lg rounded-full bg-[#A9AAAA] text-black w-[17%] border border-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#0054CF] data-[state=active]:to-[#002B69] data-[state=active]:text-white"
               value="marketing"
@@ -41,6 +41,12 @@ export default function Page() {
               value="dev"
             >
               Development
+            </TabsTrigger>
+            <TabsTrigger
+              className="mt-4 lg:text-lg rounded-full bg-[#A9AAAA] text-black w-[17%] border border-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#0054CF] data-[state=active]:to-[#002B69] data-[state=active]:text-white"
+              value="founder"
+            >
+              Founder
             </TabsTrigger>
             <TabsTrigger
               className="mt-4 lg:text-lg rounded-full bg-[#A9AAAA] text-black w-[17%] border border-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#0054CF] data-[state=active]:to-[#002B69] data-[state=active]:text-white"
@@ -113,6 +119,16 @@ export default function Page() {
               className="w-[15%] my-2 min-w-[140px]"
               name="Karthik Raj"
               imageurl="Karthik Raj R-Development.jpg"
+            />
+          </TabsContent>
+          <TabsContent
+            value="founder"
+            className="w-full flex justify-evenly  flex-wrap"
+          >
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Pavan Karthikeya Reddy"
+              imageurl="Pavan - Founder.jpeg"
             />
           </TabsContent>
           <TabsContent
