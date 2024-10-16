@@ -35,23 +35,21 @@ export default function Map() {
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
-  if (typeof window !== "undefined") {
-    return (
-      <MapContainer
-        center={[28.525173, 77.574996]}
-        zoom={55}
-        style={{ height: "100vh", width: "100%" }}
-      >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        {locations.map((loc: any) => (
-          <Marker key={loc.id} position={[loc.LAT, loc.LONG]} icon={busIcon}>
-            <Popup>
-              Shuttle ID: {loc.id} <br /> Timestamp:{" "}
-              {new Date("10/4/2024, 1:00:00 AM").toLocaleString()}
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
-    );
-  }
+  return (
+    <MapContainer
+      center={[28.525173, 77.574996]}
+      zoom={55}
+      style={{ height: "100vh", width: "100%" }}
+    >
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      {locations.map((loc: any) => (
+        <Marker key={loc.id} position={[loc.LAT, loc.LONG]} icon={busIcon}>
+          <Popup>
+            Shuttle ID: {loc.id} <br /> Timestamp:{" "}
+            {new Date("10/4/2024, 1:00:00 AM").toLocaleString()}
+          </Popup>
+        </Marker>
+      ))}
+    </MapContainer>
+  );
 }
