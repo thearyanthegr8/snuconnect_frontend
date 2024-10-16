@@ -44,15 +44,15 @@ export default function Page() {
             </TabsTrigger>
             <TabsTrigger
               className="mt-4 lg:text-lg rounded-full bg-[#A9AAAA] text-black w-[17%] border border-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#0054CF] data-[state=active]:to-[#002B69] data-[state=active]:text-white"
-              value="con"
+              value="ideation"
             >
-              Content
+              Ideation
             </TabsTrigger>
             <TabsTrigger
               className="mt-4 lg:text-lg rounded-full bg-[#A9AAAA] text-black w-[17%] border border-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#0054CF] data-[state=active]:to-[#002B69] data-[state=active]:text-white"
-              value="photo"
+              value="videography"
             >
-              Photography
+              Videography
             </TabsTrigger>
           </TabsList>
           <TabsContent
@@ -61,18 +61,23 @@ export default function Page() {
           >
             <PersonCard
               className="w-[15%] my-2 min-w-[140px]"
-              name="Amey Gautam"
-              imageurl="Amey Gautam - Marketing.jpg"
+              name="Ujjwal Mishra"
+              imageurl="Ujjwal Mishra - Marketing.jpg"
             />
             <PersonCard
               className="w-[15%] my-2 min-w-[140px]"
-              name="Ujjwal Mishra"
-              imageurl="Ujjwal Mishra - Marketing.jpg"
+              name="Vedant"
+              imageurl="Vedant - Marketing.jpeg"
+            />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Bhavya"
+              imageurl="Bhavya - Marketing.jpeg"
             />
           </TabsContent>
           <TabsContent
             value="des"
-            className="w-full flex justify-evenly mt-8 flex-wrap"
+            className="w-full flex justify-evenly  flex-wrap"
           >
             <PersonCard
               className="w-[15%] my-2 min-w-[140px]"
@@ -87,7 +92,7 @@ export default function Page() {
           </TabsContent>
           <TabsContent
             value="dev"
-            className="w-full flex justify-evenly mt-8 flex-wrap"
+            className="w-full flex justify-evenly  flex-wrap"
           >
             <PersonCard
               className="w-[15%] my-2 min-w-[140px]"
@@ -97,20 +102,53 @@ export default function Page() {
             <PersonCard
               className="w-[15%] my-2 min-w-[140px]"
               name="Mudit Gupta"
-              imageurl="Mudit Gupta - Development.jpg"
+              imageurl="Mudit Gupta - Development.webp"
+            />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Musham Varun"
+              imageurl="Varun Musham - Development.png"
+            />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Karthik Raj"
+              imageurl="Karthik Raj R-Development.jpg"
             />
           </TabsContent>
           <TabsContent
-            value="con"
-            className="w-full flex justify-evenly mt-8 flex-wrap"
+            value="ideation"
+            className="w-full flex justify-evenly  flex-wrap"
           >
-            <PersonCard className="w-[15%] my-2 min-w-[140px]" name="" />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Amey Gautam"
+              imageurl="Amey Gautam - Marketing.jpg"
+            />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Prithviraj Jhunjhunwala"
+              imageurl="Prithviraj Jhunjhunwala.png"
+            />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Adhityanarayan Ramkumar"
+              imageurl="Adhityanarayan Ramkumar - Ideation.JPEG"
+            />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Shreyansh"
+              imageurl=""
+            />
           </TabsContent>
           <TabsContent
-            value="photo"
-            className="w-full flex justify-evenly mt-8 flex-wrap"
+            value="videography"
+            className="w-full flex justify-evenly  flex-wrap"
           >
-            <PersonCard className="w-[15%] my-2 min-w-[140px]" name="" />
+            <PersonCard
+              className="w-[15%] my-2 min-w-[140px]"
+              name="Abhay Singh"
+              imageurl="Abhay Singh - Videography.jpg"
+            />
           </TabsContent>
         </Tabs>
       </div>
