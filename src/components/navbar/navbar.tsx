@@ -37,7 +37,7 @@ export default function Navbar() {
       <div
         className={`font-bold gap-16 ${
           isOpen ? "flex" : "hidden"
-        } md:flex w-full lg:w-auto absolute bg-white top-16 left-0 md:relative md:top-0 md:flex-row flex-col items-center py-8 shadow-md md:shadow-none md:py-0 md:gap-0 md:gap-16 md:px-20 md:mr-0 md:ml-auto md:pr-0 md:pl-0 md:w-auto`}
+        } md:flex w-full lg:w-auto absolute bg-white top-16 left-0 md:relative md:top-0 md:flex-row flex-col items-center py-8 shadow-md md:shadow-none md:py-0  md:gap-16 md:px-20 md:mr-0 md:ml-auto md:pr-0 md:pl-0 md:w-auto`}
       >
         <Link
           className={`my-auto h-fit text-lg underline-offset-4 decoration-2 decoration-[#0054CF] ${

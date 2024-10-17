@@ -2,6 +2,7 @@
   "name": "snuconnect_frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://j3n3kckyz3.execute-api.us-east-1.amazonaws.com",
   "scripts": {
     "dev": "next dev",
     "build": "npx prisma generate && next build",
