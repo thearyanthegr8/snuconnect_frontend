@@ -14,14 +14,14 @@ export default function ETADisplay() {
 
   async function route_name_fetch() {
     const response = await axios.get<RouteData[]>(
-      "https://j3n3kckyz3.execute-api.us-east-1.amazonaws.com/snuc/routes"
+      "https://kyqgl7t327.execute-api.ap-south-1.amazonaws.com/prod/routes"
     );
     const temp_map = new Map<string, string>(
       response.data.map((route: RouteData) => [route.id, route.route_name])
     );
     const distancePromises = Array.from(temp_map.keys()).map(async (k) => {
       const dist_object = await axios.get(
-        `https://j3n3kckyz3.execute-api.us-east-1.amazonaws.com/snuc/distance?route_id=${k}`
+        `https://kyqgl7t327.execute-api.ap-south-1.amazonaws.com/prod/distance?route_id=${k}`
       );
       return [k, dist_object.data];
     });
