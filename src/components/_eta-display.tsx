@@ -10,6 +10,7 @@ interface RouteData {
 
 export default function ETADisplay() {
   const [routeNames, setRouteNames] = useState<Map<string, string>>(new Map());
+  const [routeIdToName, setRouteIdToName] = useState<Map<string, string>>();
   const [distances, setDistances] = useState<Map<string, any>>(new Map());
 
   async function route_name_fetch() {
@@ -25,7 +26,6 @@ export default function ETADisplay() {
       );
       return [k, dist_object.data];
     });
-
     const distanceResults = await Promise.all(distancePromises);
     let temp_map_2 = new Map();
     for (let x of distanceResults) {
@@ -35,7 +35,17 @@ export default function ETADisplay() {
     setDistances(temp_map_2);
   }
 
+  async function route_id_map() {
+    const response = await axios.get("/api/stops");
+    const temp_map = new Map<string, string>();
+    for(const x of response.data){
+      temp_map.set(x.id, x.Stop_name);
+    }
+    setRouteIdToName(temp_map);
+  }
+
   useEffect(() => {
+    route_id_map();
     route_name_fetch();
     const interval = setInterval(route_name_fetch, 2000);
     return () => clearInterval(interval);
@@ -58,8 +68,7 @@ export default function ETADisplay() {
               {(e[1] as any).map((f: any) => {
                 return Object.keys(f).map((g) => (
                   <div className="flex flex-col">
-                    <div className="">{g}</div>
-                    <div className="">{f[g]}</div>
+                    <div className="">{routeIdToName?.get(g)}</div>
                   </div>
                 ));
               })}
