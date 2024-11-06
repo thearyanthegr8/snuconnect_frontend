@@ -38,7 +38,7 @@ export default function ETADisplay() {
   async function route_id_map() {
     const response = await axios.get("/api/stops");
     const temp_map = new Map<string, string>();
-    for(const x of response.data){
+    for (const x of response.data) {
       temp_map.set(x.id, x.Stop_name);
     }
     setRouteIdToName(temp_map);
@@ -53,12 +53,6 @@ export default function ETADisplay() {
 
   return (
     <div className="px-8 space-y-2">
-      {Array.from(routeNames).map(([id, name]) => (
-        <div key={id} className="flex flex-col">
-          <div className="font-bold">{id}</div>
-          <div>{name}</div>
-        </div>
-      ))}
       {Array.from(distances).map(([id, dist]) => {
         return Object.entries(dist).map((e) => (
           <div>
@@ -66,10 +60,9 @@ export default function ETADisplay() {
 
             <div className="flex w-full justify-evenly">
               {(e[1] as any).map((f: any) => {
+                console.log(e[1]);
                 return Object.keys(f).map((g) => (
-                  <div className="flex flex-col">
-                    <div className="">{routeIdToName?.get(g)}</div>
-                  </div>
+                  <div className="">{routeIdToName?.get(g)}</div>
                 ));
               })}
             </div>
@@ -79,3 +72,11 @@ export default function ETADisplay() {
     </div>
   );
 }
+
+// For future use
+// {Array.from(routeNames).map(([id, name]) => (
+//   <div key={id} className="flex flex-col">
+//     {/* <div className="font-bold">{id}</div> */}
+//     <div>{name}</div>
+//   </div>
+// ))}
