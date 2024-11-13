@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Card, CardContent } from "./ui/card";
 
 interface RouteData {
   id: string;
@@ -54,17 +55,24 @@ export default function ETADisplay() {
   return (
     <div className="px-8 space-y-2">
       {Array.from(distances).map(([id, dist]) => {
-        return Object.entries(dist).map((e) => (
-          <div>
-            <div>{`Shuttle ${e[0]}`}</div>
+        return Object.entries(dist).map((e, j) => (
+          <div key={j}>
+            <div className="underline my-2">{`Shuttle ${e[0]}`}</div>
 
-            <div className="flex w-full justify-evenly">
-              {(e[1] as any).map((f: any) => {
-                console.log(e[1]);
-                return Object.keys(f).map((g) => (
-                  <div className="">{routeIdToName?.get(g)}</div>
-                ));
-              })}
+            <div className="flex flex-col md:flex-row w-full">
+              <div className="self-center md:self-start md:my-4">Next stop: </div>
+              <div className="grid grid-cols-3 md:grid-cols-8 lg:grid-cols-16 grid-flow-row">
+                {(e[1] as any).map((f: any, i: number) => {
+                  return Object.keys(f).map((g) => (
+                    <Card
+                      key={i}
+                      className={`p-2 m-2 ${i === 0 ? "bg-green-400" : ""}`}
+                    >
+                      {routeIdToName?.get(g)}
+                    </Card>
+                  ));
+                })}
+              </div>
             </div>
           </div>
         ));

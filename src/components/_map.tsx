@@ -30,7 +30,7 @@ export default function Map() {
     };
 
     fetchLocations();
-    const interval = setInterval(fetchLocations, 500); // Fetch every x millisecond
+    const interval = setInterval(fetchLocations, 2000); // Fetch every x millisecond
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
@@ -39,7 +39,7 @@ export default function Map() {
     <MapContainer
       center={[28.525173, 77.574996]}
       zoom={55}
-      style={{ height: "100vh", width: "100%" }}
+      style={{ height: "90vh", width: "100%" }}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {locations.map((loc: any) => (
