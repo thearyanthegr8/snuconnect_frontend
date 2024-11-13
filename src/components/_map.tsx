@@ -55,3 +55,4 @@ export default function Map() {
     );
   }
 }
+export const dynamic = 'force-dynamic';

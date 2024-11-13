@@ -1,6 +1,6 @@
 import prisma from "@/db/prisma";
 import { NextResponse } from "next/server";
-
+export const dynamic = 'force-dynamic';
 export async function GET() {
   const data = await prisma.gPS.findMany({
     select: {

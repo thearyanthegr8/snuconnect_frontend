@@ -5,15 +5,13 @@ import ETADisplay from "@/components/_eta-display";
 import dynamic from "next/dynamic";
 import { useMemo } from "react";
 
+const Map = dynamic(() => import("@/components/_map"), {
+  loading: () => <span>Loading...</span>,
+  ssr: false,
+});
+
+
 export default function Page() {
-  const Map = useMemo(
-    () =>
-      dynamic(() => import("@/components/_map"), {
-        loading: () => <span>Loading...</span>,
-        ssr: false,
-      }),
-    []
-  );
   if (typeof window === "undefined") return null;
   else {
     return (
